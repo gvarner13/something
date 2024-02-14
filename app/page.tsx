@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-[#0F282F]">
       <div className="text-center">
         <h1 className="text-8xl font-black mb-4">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-teal-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A3E4FA] to-[#FFBCD9]">
             Something
           </span>
         </h1>
