@@ -1,96 +1,183 @@
 import Image from "next/image";
 
+function LogosTailwindcssIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1.67em"
+      height="1em"
+      viewBox="0 0 256 154"
+      {...props}
+    >
+      <defs>
+        <linearGradient
+          id="logosTailwindcssIcon0"
+          x1="-2.778%"
+          x2="100%"
+          y1="32%"
+          y2="67.556%"
+        >
+          <stop offset="0%" stopColor="#2298BD"></stop>
+          <stop offset="100%" stopColor="#0ED7B5"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        fill="url(#logosTailwindcssIcon0)"
+        d="M128 0C93.867 0 72.533 17.067 64 51.2C76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2c-12.8 17.067-27.733 23.467-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0M64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2c9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2c-12.8 17.067-27.733 23.467-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8"
+      ></path>
+    </svg>
+  );
+}
+
+function LogosSupabaseIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="0.98em"
+      height="1em"
+      viewBox="0 0 256 263"
+      {...props}
+    >
+      <defs>
+        <linearGradient
+          id="logosSupabaseIcon0"
+          x1="20.862%"
+          x2="63.426%"
+          y1="20.687%"
+          y2="44.071%"
+        >
+          <stop offset="0%" stopColor="#249361"></stop>
+          <stop offset="100%" stopColor="#3ECF8E"></stop>
+        </linearGradient>
+        <linearGradient
+          id="logosSupabaseIcon1"
+          x1="1.991%"
+          x2="21.403%"
+          y1="-13.158%"
+          y2="34.708%"
+        >
+          <stop offset="0%"></stop>
+          <stop offset="100%" stopOpacity="0"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        fill="url(#logosSupabaseIcon0)"
+        d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977l-2.367-157.984h106.229c19.24 0 29.971 22.223 18.007 37.292z"
+      ></path>
+      <path
+        fill="url(#logosSupabaseIcon1)"
+        fillOpacity=".2"
+        d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977l-2.367-157.984h106.229c19.24 0 29.971 22.223 18.007 37.292z"
+      ></path>
+      <path
+        fill="#3ECF8E"
+        d="M106.399 4.37c6.717-8.461 20.338-3.826 20.5 6.976l1.037 157.984H23.037c-19.241 0-29.973-22.223-18.008-37.292z"
+      ></path>
+    </svg>
+  );
+}
+
+function LogosNextjsIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 256 256"
+      {...props}
+    >
+      <defs>
+        <linearGradient
+          id="logosNextjsIcon0"
+          x1="55.633%"
+          x2="83.228%"
+          y1="56.385%"
+          y2="96.08%"
+        >
+          <stop offset="0%" stopColor="#FFF"></stop>
+          <stop offset="100%" stopColor="#FFF" stopOpacity="0"></stop>
+        </linearGradient>
+        <linearGradient
+          id="logosNextjsIcon1"
+          x1="50%"
+          x2="49.953%"
+          y1="0%"
+          y2="73.438%"
+        >
+          <stop offset="0%" stopColor="#FFF"></stop>
+          <stop offset="100%" stopColor="#FFF" stopOpacity="0"></stop>
+        </linearGradient>
+        <circle id="logosNextjsIcon2" cx="128" cy="128" r="128"></circle>
+      </defs>
+      <mask id="logosNextjsIcon3" fill="#fff">
+        <use href="#logosNextjsIcon2"></use>
+      </mask>
+      <g mask="url(#logosNextjsIcon3)">
+        <circle cx="128" cy="128" r="128"></circle>
+        <path
+          fill="url(#logosNextjsIcon0)"
+          d="M212.634 224.028L98.335 76.8H76.8v102.357h17.228V98.68L199.11 234.446a128.433 128.433 0 0 0 13.524-10.418"
+        ></path>
+        <path
+          fill="url(#logosNextjsIcon1)"
+          d="M163.556 76.8h17.067v102.4h-17.067z"
+        ></path>
+      </g>
+    </svg>
+  );
+}
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-[#0F282F]">
-      <div>
+      <div className="flex flex-col gap-10">
         <div className="text-center">
           <h1 className="text-8xl font-black mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A3E4FA] to-[#FFBCD9]">
               Something
             </span>
           </h1>
-          <h2 className="font-bold text-2xl max-w-md md:text-3xl lg:text-4xl lg:max-w-2xl">
+          <h2 className="font-bold text-2xl max-w-md md:text-3xl lg:text-4xl lg:max-w-2xl mb-4">
             Working on a{" "}
             <span className="underline decoration-[#FFA8C5]">template</span>{" "}
             that lets you build something fast
           </h2>
         </div>
-        <div className="flex">
-          <svg
-            viewBox="0 0 109 113"
-            width="109"
-            height="113"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M63.708 110.284c-2.86 3.601-8.658 1.628-8.727-2.97l-1.007-67.251h45.22c8.19 0 12.758 9.46 7.665 15.874l-43.151 54.347Z"
-              fill="url(#a)"
+        <div className="flex gap-4 justify-center p-4">
+          <LogosTailwindcssIcon className="text-6xl" />
+          <LogosNextjsIcon className="text-6xl" />
+          <LogosSupabaseIcon className="text-6xl" />
+        </div>
+        <div className="max-w-xl lg:max-w-lg">
+          <p className="mt-4 text-lg leading-8 text-gray-300">
+            Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing
+            velit quis. Duis tempor incididunt dolore.
+          </p>
+          <div className="mt-6 flex max-w-md gap-x-4">
+            <label htmlFor="email-address" className="sr-only">
+              Email address
+            </label>
+            <input
+              id="email-address"
+              name="email"
+              type="email"
+              autoComplete="email"
+              required
+              className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+              placeholder="Enter your email"
             />
-            <path
-              d="M63.708 110.284c-2.86 3.601-8.658 1.628-8.727-2.97l-1.007-67.251h45.22c8.19 0 12.758 9.46 7.665 15.874l-43.151 54.347Z"
-              fill="url(#b)"
-              fill-opacity=".2"
-            />
-            <path
-              d="M45.317 2.071c2.86-3.601 8.657-1.628 8.726 2.97l.442 67.251H9.83c-8.19 0-12.759-9.46-7.665-15.875L45.317 2.072Z"
-              fill="#3ECF8E"
-            />
-            <defs>
-              <linearGradient
-                id="a"
-                x1="53.974"
-                y1="54.974"
-                x2="94.163"
-                y2="71.829"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#249361" />
-                <stop offset="1" stop-color="#3ECF8E" />
-              </linearGradient>
-              <linearGradient
-                id="b"
-                x1="36.156"
-                y1="30.578"
-                x2="54.484"
-                y2="65.081"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop />
-                <stop offset="1" stop-opacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-          <svg
-            viewBox="0 0 256 154"
-            width="256"
-            height="154"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid"
-          >
-            <defs>
-              <linearGradient
-                x1="-2.778%"
-                y1="32%"
-                x2="100%"
-                y2="67.556%"
-                id="a"
-              >
-                <stop stop-color="#2298BD" offset="0%" />
-                <stop stop-color="#0ED7B5" offset="100%" />
-              </linearGradient>
-            </defs>
-            <path
-              d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0ZM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8Z"
-              fill="url(#a)"
-            />
-          </svg>
+            <button
+              type="submit"
+              className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
       </div>
       <div>
         <div></div>
-        <div>Made with 🧠 by gvarner</div>
+        <div>Made with 🧠 power by gvarner</div>
       </div>
     </main>
   );
