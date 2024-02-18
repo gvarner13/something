@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AddForm } from "@/app/waitlist-form";
 
 function LogosTailwindcssIcon(props: SVGProps<SVGSVGElement>) {
   return (
@@ -154,26 +155,7 @@ export default function Home() {
               Sound interesting? Sign up below for the waitlist and get updates
               as this develops.
             </p>
-            <div className="mt-6 flex max-w-md gap-x-4 mx-auto">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-                placeholder="Enter your email"
-              />
-              <button
-                type="submit"
-                className="flex-none rounded-md bg-[#FFA8C5] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#FFBCD9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
-                Sign Up
-              </button>
-            </div>
+            <AddForm />
           </div>
         </div>
       </div>
