@@ -3,12 +3,18 @@
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 
+import { createClient } from "@supabase/supabase-js";
+
 export async function createTodo(
   prevState: {
     message: string;
   },
   formData: FormData,
 ) {
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  );
   const schema = z.object({
     email: z.string().email(),
   });
@@ -23,10 +29,13 @@ export async function createTodo(
   const data = parse.data;
 
   try {
+    const { error } = await supabase
+      .from("waitlist")
+      .insert({ email: data.email });
     //do supabase stuff here
-    setTimeout(() => {
-      console.log({ data });
-    }, 2000);
+    // setTimeout(() => {
+    //   console.log({ data });
+    // }, 2000);
     revalidatePath("/");
     return { message: `Added email ${data.email}` };
   } catch (e) {

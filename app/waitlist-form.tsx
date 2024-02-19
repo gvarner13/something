@@ -4,7 +4,7 @@ import { useFormState, useFormStatus } from "react-dom";
 import { createTodo } from "@/app/actions";
 
 const initialState = {
-  message: "",
+  message: "this is a test message",
 };
 
 function SubmitButton() {
