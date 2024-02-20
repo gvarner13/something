@@ -130,7 +130,7 @@ function LogosNextjsIcon(props: SVGProps<SVGSVGElement>) {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-[#0F282F]">
+    <main className="flex min-h-screen flex-col items-center justify-between p-12 bg-[#0F282F]">
       <div className="flex flex-col gap-10">
         <div className="text-center">
           <h1 className="text-8xl font-black mb-4">
@@ -159,9 +159,19 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <div></div>
-        <div>Made with 🧠 power by gvarner</div>
+      <div className="flex justify-end w-full">
+        <div className="origin-bottom -rotate-6 flex bg-[#A3E4FA] p-2 text-black rounded-lg hover:scale-110 transition ease-in-out justify-between items-center">
+          <div className="text-4xl pr-2">🧠</div>
+          <div>
+            Powered by{" "}
+            <a
+              href="https://twitter.com/GSVarner"
+              className="underline decoration-dashed underline-offset-4"
+            >
+              @gsvarner
+            </a>
+          </div>
+        </div>
       </div>
     </main>
   );
