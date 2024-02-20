@@ -4,6 +4,9 @@ import { revalidatePath } from "next/cache";
 import { z } from "zod";
 
 import { createClient } from "@supabase/supabase-js";
+import { Resend } from "resend";
+
+import { EmailTemplate } from "@/components/email-template";
 
 export async function createTodo(
   prevState: {
@@ -15,6 +18,7 @@ export async function createTodo(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
   );
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const schema = z.object({
     email: z.string().email(),
   });
@@ -32,10 +36,14 @@ export async function createTodo(
     const { error } = await supabase
       .from("waitlist")
       .insert({ email: data.email });
-    //do supabase stuff here
-    // setTimeout(() => {
-    //   console.log({ data });
-    // }, 2000);
+
+    const emailData = await resend.emails.send({
+      from: "Something <updates@updates.garyvarner.me>",
+      to: [data.email],
+      subject: "Update on Something",
+      react: EmailTemplate({ firstName: "John" }) as React.ReactElement,
+    });
+
     revalidatePath("/");
     return { message: `Added email ${data.email}` };
   } catch (e) {
