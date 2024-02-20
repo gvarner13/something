@@ -16,7 +16,7 @@ function SubmitButton() {
       aria-disabled={pending}
       className="flex-none rounded-md bg-[#FFA8C5] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#FFBCD9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
     >
-      Sign Up
+      Get Notified
     </button>
   );
 }
