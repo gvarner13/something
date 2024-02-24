@@ -162,7 +162,7 @@ export default function Home() {
       </div>
       <div className="flex justify-end w-full">
         <div className="origin-bottom -rotate-6 flex bg-[#A3E4FA] p-2 text-black rounded-lg hover:scale-110 transition ease-in-out justify-between items-center">
-          <div className="text-4xl pr-2">🧠</div>
+          <div className="text-4xl pr-2 animate-bounce">🧠</div>
           <div>
             Powered by{" "}
             <a
