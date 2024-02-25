@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 
-import { createClient } from "@supabase/supabase-js";
+import { createClient } from "@/utils/supabase/server";
 import { Resend } from "resend";
 
 import { EmailTemplate } from "@/components/email-template";
@@ -14,10 +14,7 @@ export async function createTodo(
   },
   formData: FormData,
 ) {
-  const supabase = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-  );
+  const supabase = createClient();
   const resend = new Resend(process.env.RESEND_API_KEY);
   const schema = z.object({
     email: z.string().email(),
