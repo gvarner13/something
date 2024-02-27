@@ -150,7 +150,7 @@ export default function Home() {
           <LogosNextjsIcon className="text-6xl" />
           <LogosSupabaseIcon className="text-6xl" />
         </div>
-        <div className="flex justify-center text-center">
+        {/* <div className="flex justify-center text-center">
           <div className="max-w-xl lg:max-w-lg">
             <p className="mt-4 text-lg leading-8 text-gray-300">
               Sound interesting? Sign up below for the waitlist and get updates
@@ -158,7 +158,7 @@ export default function Home() {
             </p>
             <AddForm />
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="flex justify-end w-full">
         <div className="origin-bottom -rotate-6 flex bg-[#A3E4FA] p-2 text-black rounded-lg hover:scale-110 transition ease-in-out justify-between items-center">
