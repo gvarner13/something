@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { AddForm } from "@/app/waitlist-form";
 import { SVGProps } from "react";
+import { ConsoleTag } from "@/app/console";
 
 function LogosTailwindcssIcon(props: SVGProps<SVGSVGElement>) {
   return (
